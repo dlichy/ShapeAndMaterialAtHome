@@ -146,7 +146,7 @@ We show that our method produces more accurate surface normal and albedo, especi
     <tbody><tr>
         <td align="center" width="1000px">
             <!--<img class="round" style="width:1000px" src="./images/capture_process.mp4">-->
-            <video width="860" height="540" controls>
+            <video width="860" height="540" autoplay muted loop>
             	<source src="./images/capture_process.mp4">
             </video>
         </td>
@@ -162,17 +162,17 @@ We show that our method produces more accurate surface normal and albedo, especi
 <center><h1>Recursive Network Architecture</h1></center><table align="center">
     
     <tbody><tr> <td align="center">
-            <video width="860" height="540" controls>
+            <video width="860" height="540" controls autoplay muted loop>
             	<source src="./images/net_figure.mp4">
             </video>
     </td> </tr>
     <tr> <td>
-    <p><br>Our recursive network architecture allows us to train on low resolution (256x256) data and test on high resolution (1024x1024) data.<p>
+    <p><br>Our recursive network architecture can reason about the normal at pixel p using information from pixels in the input at distances that grow in proportion to the input size. This enables us to train on low resolution (256x256) data and generalize to high resolution (1024x1024) data at test time.<p>
     </td> </tr>
 </tbody></table>
 <hr>
 
-<center><h1>Results</h1></center><center></center><table align="center" width="1000px">
+<center><h1>Multi-Image Results</h1></center><center></center><table align="center" width="1000px">
     
     
     <table align="center" width="1030px">
@@ -180,7 +180,7 @@ We show that our method produces more accurate surface normal and albedo, especi
                 <img class="round" style="width:900px" src="./Self-calibrating Deep Photometric Stereo Networks_files/diligent_main_quant.png">
         </td> </tr> -->
         <tr><td align="center">
-                <br> Co-located input image (first row). Novel View (second row) <br>
+                <br> Co-located input image (first row). Novel View (second row). Novel View diffuse only (third row). <br>
                 <img class="round" style="height:200px" src="./images/squirrel_cup/images_s5_b0_ch6.png">
                 <img class="round" style="height:200px" src="./images/bear_cup/images_s5_b0_ch6.png">
                 <img class="round" style="height:200px" src="./images/black_skull/images_s5_b0_ch6.png">
@@ -196,7 +196,47 @@ We show that our method produces more accurate surface normal and albedo, especi
                <img class="round" style="height:200px" src="./images/hat/object_motion_video_gif.gif">
         </td></tr>
         
+        <tr><td align="center">
+               <img class="round" style="height:200px" src="./images/squirrel_cup/object_motion_video_diffuse_gif.gif">
+               <img class="round" style="height:200px" src="./images/bear_cup/object_motion_video_diffuse_gif.gif">
+               <img class="round" style="height:200px" src="./images/black_skull/object_motion_video_diffuse_gif.gif">
+               <img class="round" style="height:200px" src="./images/white_skull/object_motion_video_diffuse_gif.gif">
+               <img class="round" style="height:200px" src="./images/hat/object_motion_video_gif.gif">
+        </td></tr>
+        
     </tbody></table>
+
+<center><h2>Comparison with State-of-the-Art Uncalibrated Photometric Stereo
+            <video width="860" height="540" controls autoplay muted loop>
+            	<source src="./images/comparison_videos/multi_image_compare.mp4">
+            </video>
+
+<center><h1>Single-Image Results</h1></center><center></center><table align="center" width="1000px">
+    <h3> Single images taken with iPhone and built-in flash </h3>
+    <table align="center" width="420px">
+    
+        <tr><td align="center">
+                <br> Input image (first row). Novel View (second row). Novel View diffuse only (third row). <br>
+                <img class="round" style="height:200px" src="./images/single_skull/images_s5_b0_ch6.png">
+                <img class="round" style="height:200px" src="./images/single_starwars_cup/images_s5_b0_ch6.png">
+        </td></tr>
+        
+        <tr><td align="center">
+               <img class="round" style="height:200px" src="./images/single_skull/object_motion_video_gif.gif">
+               <img class="round" style="height:200px" src="./images/single_starwars_cup/object_motion_video_gif.gif">
+        </td></tr>
+        
+        <tr><td align="center">
+               <img class="round" style="height:200px" src="./images/single_skull/object_motion_video_diffuse_gif.gif">
+               <img class="round" style="height:200px" src="./images/single_starwars_cup/object_motion_video_diffuse_gif.gif">
+        </td></tr>
+        
+    </tbody></table>
+    
+<center><h2>Comparison with State-of-the-Art Single (or Two) Shot Inverse Rendering Methods
+            <video width="860" height="540" controls autoplay muted loop>
+            	<source src="./images/comparison_videos/single_image_compare.mp4">
+            </video>
 
 
 <br>
@@ -210,10 +250,10 @@ We show that our method produces more accurate surface normal and albedo, especi
 
 <table align="center" width="1000px">
     <tbody><tr>
-        <td width="400px">
-            <left>
+        <td width="300px">
+           <left>
             <center><h1>Acknowledgments</h1></center>
-		 Acknowledgments: This research is supported by the National Science Foundation under grant no. IIS-1526234 and IIS-1910132.
+		<center> This research is supported by the National Science Foundation under grant no. IIS-1526234 and IIS-1910132.</center>
             </left>
         </td>
     </tr>
