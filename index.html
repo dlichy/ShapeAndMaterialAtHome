@@ -145,7 +145,10 @@ We show that our method produces more accurate surface normal and albedo, especi
     
     <tbody><tr>
         <td align="center" width="1000px">
-            <img class="round" style="width:1000px" src="./images/capture_process_gif.gif">
+            <!--<img class="round" style="width:1000px" src="./images/capture_process.mp4">-->
+            <video width="860" height="540" controls>
+            	<source src="./images/capture_process.mp4">
+            </video>
         </td>
     </tr>
     <tr>
@@ -159,7 +162,9 @@ We show that our method produces more accurate surface normal and albedo, especi
 <center><h1>Recursive Network Architecture</h1></center><table align="center">
     
     <tbody><tr> <td align="center">
-            <img class="round" style="width:800px" src="./images/network_figure.gif">
+            <video width="860" height="540" controls>
+            	<source src="./images/net_figure.mp4">
+            </video>
     </td> </tr>
     <tr> <td>
     <p><br>Our recursive network architecture allows us to train on low resolution (256x256) data and test on high resolution (1024x1024) data.<p>
@@ -170,131 +175,27 @@ We show that our method produces more accurate surface normal and albedo, especi
 <center><h1>Results</h1></center><center></center><table align="center" width="1000px">
     
     
-    </table><table align="center" width="1000px">
-        <tbody><tr> <td align="center">
+    <table align="center" width="1030px">
+        <tbody> <!--<tr> <td align="center">
                 <img class="round" style="width:900px" src="./Self-calibrating Deep Photometric Stereo Networks_files/diligent_main_quant.png">
-        </td> </tr>
+        </td> </tr> -->
         <tr><td align="center">
-                <br> <b>Up to Down: Sample Input, Object, GT Normal, Results of SDPS-Net, and Error Map</b> <br>
-                <img class="round" style="height:83px" src="./Self-calibrating Deep Photometric Stereo Networks_files/ball.gif">
-                <img class="round" style="height:83px" src="./Self-calibrating Deep Photometric Stereo Networks_files/cat.gif">
-                <img class="round" style="height:83px" src="./Self-calibrating Deep Photometric Stereo Networks_files/pot1.gif">
-                <img class="round" style="height:83px" src="./Self-calibrating Deep Photometric Stereo Networks_files/bear.gif">
-                <img class="round" style="height:83px" src="./Self-calibrating Deep Photometric Stereo Networks_files/pot2.gif">
-                <img class="round" style="height:83px" src="./Self-calibrating Deep Photometric Stereo Networks_files/buddha(1).gif">
-                <img class="round" style="height:83px" src="./Self-calibrating Deep Photometric Stereo Networks_files/goblet.gif">
-                <img class="round" style="height:83px" src="./Self-calibrating Deep Photometric Stereo Networks_files/reading.gif">
-                <img class="round" style="height:83px" src="./Self-calibrating Deep Photometric Stereo Networks_files/cow.gif">
-                <img class="round" style="height:83px" src="./Self-calibrating Deep Photometric Stereo Networks_files/harvest.gif">
+                <br> Co-located input image (first row). Novel View (second row) <br>
+                <img class="round" style="height:200px" src="./images/squirrel_cup/images_s5_b0_ch6.png">
+                <img class="round" style="height:200px" src="./images/bear_cup/images_s5_b0_ch6.png">
+                <img class="round" style="height:200px" src="./images/black_skull/images_s5_b0_ch6.png">
+                <img class="round" style="height:200px" src="./images/white_skull/images_s5_b0_ch6.png">
+                <img class="round" style="height:200px" src="./images/hat/images_s5_b0_ch6.png">
         </td></tr>
-        <tr><td align="center">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/4.0_ballPNG_001.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/4.0_catPNG_001.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/4.0_pot1PNG_001.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/4.0_bearPNG_001.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/4.0_pot2PNG_001.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/4.0_buddhaPNG_001.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/4.0_gobletPNG_001.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/4.0_readingPNG_001.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/4.0_cowPNG_001.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/4.0_harvestPNG_001.png">
-        </td></tr>
-        <tr><td align="center">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/ballPNGGT_normal.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/catPNGGT_normal.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/pot1PNGGT_normal.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/bearPNGGT_normal.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/pot2PNGGT_normal.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/buddhaPNGGT_normal.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/gobletPNGGT_normal.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/readingPNGGT_normal.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/cowPNGGT_normal.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/harvestPNGGT_normal.png">
-        </td></tr>
-        <tr><td align="center">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/ballPNGDiLiGenT_normal.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/catPNGDiLiGenT_normal.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/pot1PNGDiLiGenT_normal.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/bearPNGDiLiGenT_normal.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/pot2PNGDiLiGenT_normal.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/buddhaPNGDiLiGenT_normal.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/gobletPNGDiLiGenT_normal.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/readingPNGDiLiGenT_normal.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/cowPNGDiLiGenT_normal.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/harvestPNGDiLiGenT_normal.png">
-        </td></tr>
-        <tr><td align="center">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/ballPNGDiLiGenT_diff.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/catPNGDiLiGenT_diff.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/pot1PNGDiLiGenT_diff.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/bearPNGDiLiGenT_diff.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/pot2PNGDiLiGenT_diff.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/buddhaPNGDiLiGenT_diff.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/gobletPNGDiLiGenT_diff.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/readingPNGDiLiGenT_diff.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/cowPNGDiLiGenT_diff.png">
-                <img class="round" style="height:80px" src="./Self-calibrating Deep Photometric Stereo Networks_files/harvestPNGDiLiGenT_diff.png">
-        </td></tr>
-    </tbody></table>
-
-    <center><h2>2. Light Stage Data Gallery.</h2></center><table align="center">
         
-        <tbody><tr><td align="center">
-                <b>Up to Down: Sample Input, Object, Results of SDPS-Net and UPS-FCN</b> <br>
-                <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/helmet_side.gif">
-                <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/plant.gif">
-                <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/fighting.gif">
-                <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/kneeling.gif">
-                <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/standing.gif">
-                <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/helmet_front.gif">
-        </td></tr>
         <tr><td align="center">
-             <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/4.0_helmet_side_left_helmet_side_left_0192.jpg">
-             <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/2.0_plant_left_plant_left_0021.jpg">
-             <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/4.0_knight_fighting_knight_fighting_057.jpg">
-             <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/4.0_knight_kneeling_knight_kneeling_048.jpg">
-             <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/4.0_knight_standing_knight_standing_116.jpg">
-             <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/4.0_helmet_front_left_helmet_front_left_0082.jpg">
+               <img class="round" style="height:200px" src="./images/squirrel_cup/object_motion_video_gif.gif">
+               <img class="round" style="height:200px" src="./images/bear_cup/object_motion_video_gif.gif">
+               <img class="round" style="height:200px" src="./images/black_skull/object_motion_video_gif.gif">
+               <img class="round" style="height:200px" src="./images/white_skull/object_motion_video_gif.gif">
+               <img class="round" style="height:200px" src="./images/hat/object_motion_video_gif.gif">
         </td></tr>
-        <tr><td align="center">
-             <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/helmet_side_left_Normal_DiLiGenT.jpg">
-             <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/plant_left_Normal_DiLiGenT.jpg">
-             <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/knight_fighting_Normal_DiLiGenT.jpg">
-             <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/knight_kneeling_Normal_DiLiGenT.jpg">
-             <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/knight_standing_Normal_DiLiGenT.jpg">
-             <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/helmet_front_left_Normal_DiLiGenT.jpg">
-        </td></tr>
-        <tr><td align="center">
-             <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/helmet_side_left_Normal_DiLiGenT(1).jpg">
-             <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/plant_left_Normal_DiLiGenT(1).jpg">
-             <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/knight_fighting_Normal_DiLiGenT(1).jpg">
-             <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/knight_kneeling_Normal_DiLiGenT(1).jpg">
-             <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/knight_standing_Normal_DiLiGenT(1).jpg">
-             <img class="round" style="height:180px" src="./Self-calibrating Deep Photometric Stereo Networks_files/helmet_front_left_Normal_DiLiGenT(1).jpg">
-        </td></tr>
-    </tbody></table>
-    <center><h2>3. Gourd&amp;Apple Dataset.</h2></center><table align="center">
-         <!--(Sample Input and Results of SDPS-Net)-->
-        <tbody><tr><td align="center">
-                <img class="round" style="height:150px" src="./Self-calibrating Deep Photometric Stereo Networks_files/apple.gif">
-                <img class="round" style="height:150px" src="./Self-calibrating Deep Photometric Stereo Networks_files/apple_Normal_DiLiGenT.png">
-                <img class="round" style="height:150px" src="./Self-calibrating Deep Photometric Stereo Networks_files/gourd1.gif">
-                <img class="round" style="height:150px" src="./Self-calibrating Deep Photometric Stereo Networks_files/gourd1_Normal_DiLiGenT.png">
-                <img class="round" style="height:150px" src="./Self-calibrating Deep Photometric Stereo Networks_files/gourd2.gif">
-                <img class="round" style="height:150px" src="./Self-calibrating Deep Photometric Stereo Networks_files/gourd2_Normal_DiLiGenT.png">
-        </td></tr>
-        <!--
-        <tr><td align=center>
-                <img class="round" style="height:180px" src="./files/Gourd/2.0_apple_I_0003.jpg"/>
-                <img class="round" style="height:180px" src="./files/Gourd/2.0_gourd1_I_0003.jpg"/>
-                <img class="round" style="height:180px" src="./files/Gourd/2.0_gourd2_I_0003.jpg"/>
-        </td></tr>
-        <tr><td align=center>
-                 <img class="round" style="height:180px" src="./files/Gourd/apple_Normal_DiLiGenT.png"/>
-                <img class="round" style="height:180px" src="./files/Gourd/gourd1_Normal_DiLiGenT.png"/>
-                <img class="round" style="height:180px" src="./files/Gourd/gourd2_Normal_DiLiGenT.png"/>
-        </td></tr>
-        -->
+        
     </tbody></table>
 
 
@@ -312,7 +213,7 @@ We show that our method produces more accurate surface normal and albedo, especi
         <td width="400px">
             <left>
             <center><h1>Acknowledgments</h1></center>
-		 AcknowledgmentThis research is supported by the Na-tional Science Foundation under grant no. IIS-1526234 andIIS-1910132
+		 Acknowledgments: This research is supported by the National Science Foundation under grant no. IIS-1526234 and IIS-1910132.
             </left>
         </td>
     </tr>
