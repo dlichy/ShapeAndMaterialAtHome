@@ -80,7 +80,7 @@ a:hover {
 
 
 <title>Shape and Material Capture at Home</title>
-<meta property="og:image" content="https://github.com/"> <!--TODO-->
+<meta property="og:image" content="https://github.com/dlichy/ShapeAndMaterial"> <!--TODO-->
 <!--<meta property="og:title" content="Self-calibrating Deep Photometric Stereo Networks, In CVPR 2019.">-->
 </head>
 
@@ -109,7 +109,7 @@ a:hover {
             <td align="center" width="900px">
                 <center>
                     <span style="font-size:22px"><a href="https://github.com/">Code [PyTorch]</a></span>    
-                    <span style="font-size:22px"><a href="https://arxiv.org/">Paper [CVPR 2021]</a> </span>    
+                    <span style="font-size:22px"><a href="arxiv_paper.pdf">Paper [CVPR 2021]</a> </span>    
                     <br>
             </td>
         </tr>
@@ -167,12 +167,12 @@ We show that our method produces more accurate surface normal and albedo, especi
             </video>
     </td> </tr>
     <tr> <td>
-    <p><br>Our recursive network architecture can reason about the normal at pixel p using information from pixels in the input at distances that grow in proportion to the input size. This enables us to train on low resolution (256x256) data and generalize to high resolution (1024x1024) data at test time.<p>
+    <p><br>Our recursive network architecture learns to predict normals at resolution 2<sup>k</sup>x2<sup>k</sup> given an image at 2<sup>k</sup>x2<sup>k</sup> and normals at  2<sup>k-1</sup>x2<sup>k-1</sup>. This enables us to train on low resolution (256x256) data and generalize to high resolution (1024x1024) data at test time.<p>
     </td> </tr>
 </tbody></table>
 <hr>
 
-<center><h1>Multi-Image Results</h1></center><center></center><table align="center" width="1000px">
+<center><h1>Multi-Image Results</h1></center>
     
     
     <table align="center" width="1030px">
@@ -201,18 +201,20 @@ We show that our method produces more accurate surface normal and albedo, especi
                <img class="round" style="height:200px" src="./images/bear_cup/object_motion_video_diffuse_gif.gif">
                <img class="round" style="height:200px" src="./images/black_skull/object_motion_video_diffuse_gif.gif">
                <img class="round" style="height:200px" src="./images/white_skull/object_motion_video_diffuse_gif.gif">
-               <img class="round" style="height:200px" src="./images/hat/object_motion_video_gif.gif">
+               <img class="round" style="height:200px" src="./images/hat/object_motion_video_diffuse_gif.gif">
         </td></tr>
         
     </tbody></table>
+<hr>
 
-<center><h2>Comparison with State-of-the-Art Uncalibrated Photometric Stereo
-            <video width="860" height="540" controls autoplay muted loop>
+<center><h1>Comparison with State-of-the-Art Uncalibrated Photometric Stereo</h1></center>
+            <center><video width="860" height="540" controls autoplay muted loop>
             	<source src="./images/comparison_videos/multi_image_compare.mp4">
-            </video>
+            </video></center>
 
-<center><h1>Single-Image Results</h1></center><center></center><table align="center" width="1000px">
-    <h3> Single images taken with iPhone and built-in flash </h3>
+<hr>
+<center><h1>Single-Image Results</h1></center>
+    <center> Images taken with iPhone and built-in flash </center>
     <table align="center" width="420px">
     
         <tr><td align="center">
@@ -233,19 +235,18 @@ We show that our method produces more accurate surface normal and albedo, especi
         
     </tbody></table>
     
-<center><h2>Comparison with State-of-the-Art Single (or Two) Shot Inverse Rendering Methods
+<hr>
+<center><h1>Comparison with State-of-the-Art Single (or Two) Shot Inverse Rendering Methods
             <video width="860" height="540" controls autoplay muted loop>
             	<source src="./images/comparison_videos/single_image_compare.mp4">
             </video>
-
-
-<br>
-<hr>
-<center>
-    <center><h1>Code and Model</h1></center>
-    <h3>Code, models and datasets are available at <a href="https://github.com">Github!</a></h3>
-    <!--<h3>Our code and trained model will be made publicly available before June 2019! !</h3>-->
 </center>
+
+
+<hr>
+<center><h1>Code and Model</h1></center>
+    <center><h3>Code, models and datasets are available at <a href="https://github.com/dlichy/ShapeAndMaterial">Github!</a></h3></center>
+    <!--<h3>Our code and trained model will be made publicly available before June 2019! !</h3>-->
 <hr>
 
 <table align="center" width="1000px">
